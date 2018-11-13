@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 
-
+console.log('got the following envs: \n');
+console.log(process.env.DIALOGFLOW_TOKEN + "," + process.env.JABBER_JID + "," + process.env.JABBER_PASSWORD);
 /*
 Make sure you create a .env file with the following data -
 JABBER_JID=user@domain.com
